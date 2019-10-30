@@ -10,6 +10,10 @@ Library    SeleniumLibrary
 MyFirstTest
     [Tags]    sanity
     Log  Hello World....
+
+MyFirstTest2
+    [Tags]    sanity
+    Log  Hello World....
     
     
 SeleniumTest
