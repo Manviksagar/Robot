@@ -22,6 +22,8 @@ SeleniumTest
     browserOpen     ${URL}    ${browser}
     Input Text    ${Tx_User}    Sagar
     sleep     2
+    FullScreenshot
+    VerifyTitlePage
     browserclosing
     
     
