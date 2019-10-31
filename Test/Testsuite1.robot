@@ -1,7 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary    
 
-
+Resource    ../Resources/Resource.robot
+Variables    ../PageObjects/Locators.py
 
 
 
@@ -18,17 +19,13 @@ MyFirstTest2
     
 SeleniumTest
     [Tags]    regression
-    browserOpen
-    Input Text    name=q    Sagar
+    browserOpen     ${URL}    ${browser}
+    Input Text    ${Tx_User}    Sagar
     sleep     2
-    Close Browser
+    browserclosing
     
     
-    
-*** Keywords ***
 
-browserOpen
-    Open Browser    ${URL}    ${browser}
         
     
  *** Variable ***
